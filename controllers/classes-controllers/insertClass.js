@@ -11,7 +11,7 @@ const insertClass = asyncHandler( async (req , res) => {
 
     const result = await classModel.save();
     
-    createFolder(result._id.toString());
+    //createFolder(result._id.toString());
 
     res.status(201).json(result);
 

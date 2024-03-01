@@ -61,9 +61,7 @@ app.use("/deliveredHWs-routes/" , deliveredHWsRouter);
 app.use("/projects-routes/" , projectsRouter);
 
 
-//.connect("mongodb+srv://main-user:unTestAPIpwd@untestapi.bn7enus.mongodb.net/?retryWrites=true&w=majority")
-//.connect("mongodb://127.0.0.1:27017/unTestAPI")
-//MONGO_URI=mongodb://127.0.0.1:27017/unApiDemo
+
 //connect to mongoose 
 mongoose
     .connect(process.env.MONGO_URI)

@@ -11,7 +11,7 @@ const insertSubject = asyncHandler( async (req , res) => {
 
     const result = await subjectModel.save();
 
-    createFolder(result.class.toString(),result._id.toString());
+    //createFolder(result.class.toString(),result._id.toString());
 
     res.status(201).json("success");
 
